@@ -1,11 +1,12 @@
-package com.reactiveMongo;
+package com.reactiveMongo.Service;
 
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-
+import com.reactiveMongo.Entity.User;
+import com.reactiveMongo.Repo.UserRepo;
 
 import lombok.AllArgsConstructor;
 import lombok.extern.log4j.Log4j2;
@@ -31,7 +32,7 @@ public class UserService {
 	
 	
 	//Mono FInd By ID
-	public Mono<User> findById(String id){
+	public Mono<User> findById(long id){
 		return userRepository.findById(id);
 	}
 	
@@ -43,7 +44,7 @@ public class UserService {
 	
 	
 	//Delete User
-	public Mono<Void> deleteUserById(String id){
+	public Mono<Void> deleteUserById(long id){
 		
 //		return userRepository.findById(id)
 //		.flatMap(t -> userRepository.deleteById(id).thenReturn(t) );  //Doubt

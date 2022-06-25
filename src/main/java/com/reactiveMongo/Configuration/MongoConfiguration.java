@@ -1,4 +1,4 @@
-package com.reactiveMongo;
+package com.reactiveMongo.Configuration;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;

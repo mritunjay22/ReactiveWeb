@@ -3,7 +3,7 @@ this is to convert the UserDto to User entity and vice versa
 
  * 
  */
-package com.reactiveMongo;
+package com.reactiveMongo.Entity;
 
 import org.springframework.beans.BeanUtils;
 

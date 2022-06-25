@@ -1,4 +1,4 @@
-package com.reactiveMongo;
+package com.reactiveMongo.Configuration;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.reactive.config.EnableWebFlux;
